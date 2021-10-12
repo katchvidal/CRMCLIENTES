@@ -4,9 +4,8 @@ import { setContext } from '@apollo/client/link/context'
 
 
 const httpLink = createHttpLink({
-  uri : 'https://graphql-backendserver-apollo1.herokuapp.com/',
+  uri : 'https://graphql-backendserver-apollo1.herokuapp.com/'
   //uri: 'http://localhost:4000/'
-  Credential: 'include'
 })
 
 const authLink = setContext((_, { headers }) => {
